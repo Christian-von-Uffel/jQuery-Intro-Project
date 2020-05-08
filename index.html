@@ -16,14 +16,60 @@
   </header>
   <div id="container">
     <h1 id="heading1">Heading One</h1>
-    <p id="para1">dummy content for select later</p>
+    <p id="para1">dummy content <span>hey</span> for select later</p>
 
     <div id="container">
       <h1 class="heading2">Heading One</h1>
       <p class="para2">dummy content for select later</p>
+      <span>this isn't red when jquery selector says 'p span' because it requires both criteria to be true</span>
+      <ul id="list">
+        <li>list item</li>
+        <li>list item</li>
+        <li>list item</li>
+        <li>list item</li>
+        <li>list item</li>
+      </ul>
+      <a href="www.google.com">google</a> we're popular
+      <a href="www.bing.com">bing</a> - we're lonely
   </div>
   <script type="text/javascript">
-    $('h1').hide()
+    <!-- hide all h1 content -->
+    <!-- $('h1').hide() -->
+
+    <!-- hide all h1 with id heading 1 -->
+    <!-- $('h1#heading1').hide() -->
+
+    <!-- hide all content with class "heading2" -->
+    <!-- $('.heading2').hide() -->
+
+    <!-- make content in spans red if it's in a paragraph-->
+    <!-- $('p span').css('color', 'red'); -->
+
+    <!-- make unordered lists with id list red -->
+    <!-- $('ul#list').css('color', 'red'); -->\
+
+    <!-- make the first list item red -->
+    <!-- $('ul#list li:first').css('color', 'red'); -->
+
+    <!-- Make the last item green -->
+    <!-- $('ul#list li:last').css('color', 'green'); -->
+
+    <!-- make the even item's background yellow -->
+    <!-- $('ul#list li:even').css('background', 'yellow'); -->
+
+    <!-- make the odd item's background orange -->
+    <!-- $('ul#list li:odd').css('background', 'orange'); -->
+
+    <!-- make links pointing to bing.com purple -->
+    $('a[href="www.bing.com"]').css('color', 'purple');
+
+    <!-- hide everything on the screen -->
+    <!-- $('*').hide(); -->
+
+    <!-- hide links pointing to bing; sorry bing; no one likes you -->
+    $('a[href="www.bing.com"]').hide();
+
+
   </script>
 </body>
 </html>
