@@ -14,7 +14,7 @@ Once you've included this script you can just starting writing jQuery code after
   your code goes here
 </script>
 
-
+jQuery uses single quotes for most use cases.
 
 ## Using jQuery to create highlights on the page
 
@@ -23,3 +23,7 @@ You can use jQuery to change the background color of elements on pages:
   $('ul#list li:even').css('background', 'yellow');
 
   $('name of CSS selector').css('background','name of color or hex value here')
+
+## Using jQuery to change selectors with a given value
+
+You can change the appearance of items on a page using CSS selectors when they equal a given value
